@@ -51,12 +51,22 @@ const Slider = () => {
 	return (
 		<div className={classes.box}>
 			<div className={classes.slider}>
-				<Image
-					src={images[currentImage]}
-					width={600}
-					height={500}
-					alt={altTexts[currentImage]}
-				/>
+				{images.map((image, index) => (
+					<Image
+						key={index}
+						src={image}
+						width={600}
+						height={500}
+						alt={altTexts[index]}
+						className={`${classes.image} ${
+							index === currentImage ? classes.active : ''
+						}`}
+						style={{
+							transition: 'opacity 0.5s ease',
+							opacity: index === currentImage ? 1 : 0,
+						}}
+					/>
+				))}
 				<button
 					onClick={changePreviousSlide}
 					className={`${classes.arrow} ${classes.left}`}
@@ -71,6 +81,7 @@ const Slider = () => {
 				</button>
 				<div className={classes.text}>{altTexts[currentImage]}</div>
 			</div>
+
 			<div className={classes.dots}>
 				{images.map((image, i) => (
 					<div

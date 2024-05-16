@@ -1,9 +1,20 @@
 .box {
 	position: relative;
 	.slider {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		position: relative;
+		height: 500px;
+		width: 600px;
+		.image {
+			position: absolute;
+			object-fit: cover;
+			z-index: 0;
+		}
 	}
 	.arrow {
+		z-index: 2;
 		position: absolute;
 		top: 50%;
 		outline: none;
@@ -20,6 +31,7 @@
 			right: 0;
 		}
 	}
+
 	.text {
 		position: absolute;
 		bottom: 0;
@@ -35,6 +47,7 @@
 		background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 	}
 	.dots {
+		margin: 1em;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -50,5 +63,14 @@
 				background-color: #fff;
 			}
 		}
+	}
+}
+
+@keyframes showUp {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
 	}
 }
