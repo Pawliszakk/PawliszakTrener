@@ -1,0 +1,47 @@
+.reviews {
+	padding: 4rem 0;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	overflow: hidden;
+	h3 {
+		margin: 4rem 0;
+		font-size: 3rem;
+	}
+	.box {
+		.google {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			span {
+				font-size: 2.4rem;
+				margin: 1rem 0;
+				font-weight: bold;
+			}
+			.stars {
+				svg {
+					color: #f6bb07;
+					width: 30px;
+					height: 30px;
+				}
+			}
+			p {
+				font-size: 1.4rem;
+				span {
+					font-size: 1.4rem;
+					font-weight: bold;
+				}
+			}
+			img {
+				object-fit: contain;
+			}
+		}
+	}
+	@media (min-width: 992px) {
+		.box {
+			max-width: 1200px;
+		}
+	}
+}
