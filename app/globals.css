@@ -7,3 +7,9 @@ html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
 }
+
+:root {
+	--cta: #646cfd;
+	--bg: #fff;
+	--bg-darker: #f2f4f7;
+}

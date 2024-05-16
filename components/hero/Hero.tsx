@@ -13,7 +13,7 @@ const Hero = () => {
 
 				<div className={classes.buttons}>
 					<Button>Oferta</Button>
-					<Button>Kontakt</Button>
+					<Button transparent>Kontakt</Button>
 				</div>
 			</div>
 		</header>
