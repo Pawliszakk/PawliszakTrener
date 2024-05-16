@@ -1,0 +1,54 @@
+.box {
+	position: relative;
+	.slider {
+		position: relative;
+	}
+	.arrow {
+		position: absolute;
+		top: 50%;
+		outline: none;
+		background-color: transparent;
+		border: none;
+		color: #fff;
+		font-size: 8rem;
+		transform: translateY(-50%);
+		cursor: pointer;
+		&.left {
+			left: 0;
+		}
+		&.right {
+			right: 0;
+		}
+	}
+	.text {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		color: #fff;
+		font-size: 2rem;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		padding-left: 1em;
+		padding: 40px;
+		background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+	}
+	.dots {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.dot {
+			width: 10px;
+			height: 10px;
+			background-color: rgb(197, 191, 191);
+			border-radius: 50%;
+			margin: 10px;
+			cursor: pointer;
+			&.active {
+				border: 2px solid var(--cta);
+				background-color: #fff;
+			}
+		}
+	}
+}
