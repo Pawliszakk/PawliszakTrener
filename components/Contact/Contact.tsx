@@ -4,6 +4,8 @@ import { FiPhone } from 'react-icons/fi';
 import { RxEnvelopeClosed } from 'react-icons/rx';
 import { FaInstagram } from 'react-icons/fa6';
 import Button from '../UI/Button';
+import { FaRegUser } from 'react-icons/fa';
+import { BiMessageDetail } from 'react-icons/bi';
 
 const Contact = () => {
 	return (
@@ -31,11 +33,20 @@ const Contact = () => {
 				</div>
 				<div className={classes.form}>
 					<div className={classes.top}>
-						<input type="text" name="name" placeholder="Twoje imię" />
-						<input type="text" name="email" placeholder="Twój adres e-mail" />
+						<div className={classes.input}>
+							<input type="text" name="name" placeholder="Twoje imię" />
+							<FaRegUser />
+						</div>
+						<div className={classes.input}>
+							<input type="text" name="email" placeholder="Twój adres e-mail" />
+							<RxEnvelopeClosed />
+						</div>
 					</div>
 					<div className={classes.bottom}>
-						<textarea name="message" id=""></textarea>
+						<div className={classes.input}>
+							<textarea name="message" id="" placeholder="Wiadomość"></textarea>
+							<BiMessageDetail />
+						</div>
 					</div>
 					<Button darkHoverFont>wyślij wiadomość</Button>
 				</div>
