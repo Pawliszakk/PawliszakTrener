@@ -1,6 +1,10 @@
 .bar {
 	display: none;
 
+	&.scrolled {
+		transform: translateY(-100%);
+	}
+
 	@media (min-width: 768px) {
 		padding: 0.5em;
 		padding-right: 10%;
@@ -8,6 +12,7 @@
 		justify-content: flex-end;
 		align-items: center;
 		background-color: rgba(0, 0, 0, 0.5);
+		transition: transform 0.3s;
 		a {
 			display: inline-block;
 			margin: 0 0.5em;

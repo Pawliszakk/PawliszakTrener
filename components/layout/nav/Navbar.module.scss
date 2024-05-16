@@ -14,9 +14,9 @@
 		position: relative;
 		margin: 0 auto;
 		padding: 2rem;
-		max-width: 1200px;
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
+		align-items: center;
 		.logo {
 			a {
 				display: flex;
@@ -77,6 +77,26 @@
 			display: none;
 		}
 		.nav {
+			transition: transform 0.3s;
+			&.scrolled {
+				padding: 1rem;
+				transform: translateY(-35px);
+				background-color: var(--bg);
+
+				.logo {
+					a {
+						color: #000;
+					}
+				}
+
+				ul {
+					li {
+						a {
+							color: #000;
+						}
+					}
+				}
+			}
 			ul {
 				display: flex;
 				li {

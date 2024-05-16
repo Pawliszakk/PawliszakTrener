@@ -1,20 +1,40 @@
 'use client';
+import { useEffect, useState } from 'react';
+
 import classes from './Navbar.module.scss';
 
 import { CiDumbbell } from 'react-icons/ci';
 import SocialBar from './SocialBar';
 import Hamburger from 'hamburger-react';
-import { useState } from 'react';
 
 const Navbar = () => {
 	const [isOpen, setOpen] = useState(false);
+	const [isScrolled, setIsScrolled] = useState(false);
 
+	useEffect(() => {
+		const handleScroll = () => {
+			const scrollTop = window.scrollY;
+			if (scrollTop > 0) {
+				setIsScrolled(true);
+			} else {
+				setIsScrolled(false);
+			}
+		};
+
+		window.addEventListener('scroll', handleScroll);
+
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	}, []);
 	const toggleNavbarHandler = () => setOpen((prev) => !prev);
+
+	console.log(isScrolled);
 
 	return (
 		<header className={classes.header}>
-			<SocialBar />
-			<nav className={classes.nav}>
+			<SocialBar isScrolled={isScrolled} />
+			<nav className={`${classes.nav} ${isScrolled ? classes.scrolled : null}`}>
 				<div className={classes.logo}>
 					{' '}
 					<a href="/#home">
