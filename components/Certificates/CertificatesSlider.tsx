@@ -7,17 +7,17 @@ const CertificatesSlider = () => {
 	const [emblaRef] = useEmblaCarousel();
 
 	const certificates = [
-		'/assets/certyfikaty/1.jpg',
-		'/assets/certyfikaty/2.jpg',
-		'/assets/certyfikaty/3.jpg',
-		'/assets/certyfikaty/4.jpg',
-		'/assets/certyfikaty/5.jpg',
-		'/assets/certyfikaty/6.jpg',
-		'/assets/certyfikaty/7.jpg',
-		'/assets/certyfikaty/8.jpg',
-		'/assets/certyfikaty/9.jpg',
-		'/assets/certyfikaty/10.jpg',
-		'/assets/certyfikaty/11.jpg',
+		'/assets/certyfikaty/1.JPG',
+		'/assets/certyfikaty/2.JPG',
+		'/assets/certyfikaty/3.JPG',
+		'/assets/certyfikaty/4.JPG',
+		'/assets/certyfikaty/5.JPG',
+		'/assets/certyfikaty/6.JPG',
+		'/assets/certyfikaty/7.JPG',
+		'/assets/certyfikaty/8.JPG',
+		'/assets/certyfikaty/9.JPG',
+		'/assets/certyfikaty/10.JPG',
+		'/assets/certyfikaty/11.JPG',
 	];
 
 	return (

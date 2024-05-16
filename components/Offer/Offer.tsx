@@ -12,7 +12,7 @@ const Offer = () => {
 				<div className={classes.tile}>
 					<div className={classes.image}>
 						<Image
-							src="/assets/oferta/konsultacja.jpg"
+							src="/assets/oferta/konsultacja.JPG"
 							width={480}
 							height={480}
 							alt="Zdjęcie prezentujące oferte"
@@ -33,7 +33,7 @@ const Offer = () => {
 				<div className={classes.tile}>
 					<div className={classes.image}>
 						<Image
-							src="/assets/oferta/prowadzenie.jpg"
+							src="/assets/oferta/prowadzenie.JPG"
 							width={480}
 							height={480}
 							alt="Zdjęcie prezentujące oferte"
@@ -53,7 +53,7 @@ const Offer = () => {
 				<div className={classes.tile}>
 					<div className={classes.image}>
 						<Image
-							src="/assets/oferta/trening.jpg"
+							src="/assets/oferta/trening.JPG"
 							width={480}
 							height={480}
 							alt="Zdjęcie prezentujące oferte"
@@ -74,7 +74,7 @@ const Offer = () => {
 				<div className={classes.tile}>
 					<div className={classes.image}>
 						<Image
-							src="/assets/oferta/pakiet.jpg"
+							src="/assets/oferta/pakiet.JPG"
 							width={480}
 							height={480}
 							alt="Zdjęcie prezentujące oferte"
@@ -94,7 +94,7 @@ const Offer = () => {
 				<div className={classes.tile}>
 					<div className={classes.image}>
 						<Image
-							src="/assets/oferta/konsultacja.jpg"
+							src="/assets/oferta/konsultacja.JPG"
 							width={480}
 							height={480}
 							alt="Zdjęcie prezentujące oferte"
