@@ -1,42 +1,42 @@
+'use client';
 import classes from './Navbar.module.scss';
 
 import { CiDumbbell } from 'react-icons/ci';
-import { FaEnvelope, FaSquareFacebook } from 'react-icons/fa6';
-import { SiInstagram } from 'react-icons/si';
+import SocialBar from './SocialBar';
+import Hamburger from 'hamburger-react';
+import { useState } from 'react';
 
 const Navbar = () => {
+	const [isOpen, setOpen] = useState(false);
+
+	const toggleNavbarHandler = () => setOpen((prev) => !prev);
+
 	return (
 		<header className={classes.header}>
-			<div className={classes.bar}>
-				<div className={classes.icons}>
-					<a href="mailto:oskar.pawliszak1@o2.pl">
-						<FaEnvelope />
-					</a>
-					<a href="https://www.facebook.com/oskar.pawliszak.5/">
-						<FaSquareFacebook />
-					</a>
-					<a href="https://www.instagram.com/pawliszakk">
-						<SiInstagram />
-					</a>
-				</div>
-			</div>
+			<SocialBar />
 			<nav className={classes.nav}>
 				<div className={classes.logo}>
 					{' '}
-					<CiDumbbell /> Pawliszak Trener
+					<a href="/#home">
+						<CiDumbbell /> Pawliszak Trener
+					</a>
 				</div>
-				<ul className={classes.list}>
-					<li>
-						<a href="#">O mnie</a>
+				<div className={classes.hamburger}>
+					<Hamburger toggled={isOpen} toggle={setOpen} />
+				</div>
+
+				<ul className={`${classes.list} ${isOpen ? classes.open : null}`}>
+					<li onClick={toggleNavbarHandler}>
+						<a href="#o-mnie">O mnie</a>
 					</li>
-					<li>
-						<a href="#">Plany</a>
+					<li onClick={toggleNavbarHandler}>
+						<a href="#plany">Plany</a>
 					</li>
-					<li>
-						<a href="#">Oferta</a>
+					<li onClick={toggleNavbarHandler}>
+						<a href="#oferta">Oferta</a>
 					</li>
-					<li>
-						<a href="#">Kontakt</a>
+					<li onClick={toggleNavbarHandler}>
+						<a href="#kontakt">Kontakt</a>
 					</li>
 				</ul>
 			</nav>

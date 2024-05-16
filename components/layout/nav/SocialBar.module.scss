@@ -1,0 +1,13 @@
+.bar {
+	padding: 0.3em;
+	padding-right: 20%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	a {
+		display: inline-block;
+		margin: 0 0.5em;
+		font-size: 2rem;
+	}
+}
