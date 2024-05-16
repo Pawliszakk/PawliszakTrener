@@ -1,11 +1,12 @@
 import Image from 'next/image';
 import classes from './Offer.module.scss';
 import Button from '../UI/Button';
+import SectionTitle from '../UI/SectionTitle';
 
 const Offer = () => {
 	return (
 		<section className={classes.offer} id="oferta">
-			<h3>Oferta</h3>
+			<SectionTitle>Oferta</SectionTitle>
 
 			<div className={classes.offers}>
 				<div className={classes.tile}>

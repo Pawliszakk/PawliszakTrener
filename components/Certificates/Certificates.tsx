@@ -1,11 +1,12 @@
+import SectionTitle from '../UI/SectionTitle';
 import classes from './Certificates.module.scss';
+import CertificatesSlider from './CertificatesSlider';
 
 const Certificates = () => {
 	return (
 		<section className={classes.certificates}>
-			<h3>Certyfikaty</h3>
-
-			<div className={classes.box}></div>
+			<SectionTitle>Certyfikaty</SectionTitle>
+			<CertificatesSlider />
 		</section>
 	);
 };

@@ -1,0 +1,19 @@
+.title {
+	font-size: 2rem;
+	margin: 3rem 0;
+	&.blue {
+		color: var(--cta);
+	}
+	@media (min-width: 400px) {
+		font-size: 2.4rem;
+	}
+	@media (min-width: 576px) {
+		font-size: 2.8rem;
+	}
+	@media (min-width: 768px) {
+		font-size: 3rem;
+	}
+	@media (min-width: 992px) {
+		font-size: 3.4rem;
+	}
+}

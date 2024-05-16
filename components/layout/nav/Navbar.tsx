@@ -6,21 +6,33 @@ import classes from './Navbar.module.scss';
 import { CiDumbbell } from 'react-icons/ci';
 import SocialBar from './SocialBar';
 import Hamburger from 'hamburger-react';
+import { usePathname } from 'next/navigation';
 
 const Navbar = () => {
 	const [isOpen, setOpen] = useState(false);
 	const [isScrolled, setIsScrolled] = useState(false);
-
+	const pathname = usePathname();
 	useEffect(() => {
 		const handleScroll = () => {
 			const scrollTop = window.scrollY;
 			if (scrollTop > 0) {
+				if (pathname !== '/') {
+					setIsScrolled(true);
+					return;
+				}
 				setIsScrolled(true);
 			} else {
+				if (pathname !== '/') {
+					setIsScrolled(true);
+					return;
+				}
 				setIsScrolled(false);
 			}
 		};
-
+		if (pathname !== '/') {
+			setIsScrolled(true);
+			return;
+		}
 		window.addEventListener('scroll', handleScroll);
 
 		return () => {

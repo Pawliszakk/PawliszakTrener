@@ -2,11 +2,12 @@ import classes from './Reviews.module.scss';
 import Image from 'next/image';
 import { TbStarFilled } from 'react-icons/tb';
 import ReviewsSlider from './ReviewsSlider';
+import SectionTitle from '../UI/SectionTitle';
 
 const Reviews = () => {
 	return (
 		<section className={classes.reviews}>
-			<h3>Wasze Opinie</h3>
+			<SectionTitle>Wasze opinie</SectionTitle>
 
 			<div className={classes.box}>
 				<div className={classes.google}>
@@ -29,7 +30,7 @@ const Reviews = () => {
 						alt="Google logo icon"
 					/>
 				</div>
-                <ReviewsSlider/>
+				<ReviewsSlider />
 			</div>
 		</section>
 	);

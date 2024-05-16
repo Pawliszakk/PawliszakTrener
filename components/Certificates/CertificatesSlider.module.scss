@@ -1,0 +1,53 @@
+.box {
+	margin: 0 auto;
+	overflow: hidden;
+	width: 90%;
+	max-width: 1200px;
+	.slider {
+		display: flex;
+		.image {
+			flex: 0 0 80%;
+			min-width: 0;
+			width: 250px;
+			height: 250px;
+			img {
+				object-fit: contain;
+			}
+		}
+	}
+	@media (min-width: 576px) {
+		.slider {
+			.image {
+				flex: 0 0 50%;
+			}
+		}
+	}
+	@media (min-width: 768px) {
+		.slider {
+			.image {
+				flex: 0 0 30%;
+			}
+		}
+	}
+	@media (min-width: 1200px) {
+		.slider {
+			.image {
+				flex: 0 0 25%;
+			}
+		}
+	}
+	@media (min-width: 1400px) {
+		.slider {
+			.image {
+				flex: 0 0 20%;
+			}
+		}
+	}
+	@media (min-width: 1600px) {
+		.slider {
+			.image {
+				flex: 0 0 25%;
+			}
+		}
+	}
+}

@@ -6,11 +6,12 @@ import { FaInstagram } from 'react-icons/fa6';
 import Button from '../UI/Button';
 import { FaRegUser } from 'react-icons/fa';
 import { BiMessageDetail } from 'react-icons/bi';
+import SectionTitle from '../UI/SectionTitle';
 
 const Contact = () => {
 	return (
 		<section className={classes.contact} id="kontakt">
-			<h3>Skontaktuj się ze mną</h3>
+			<SectionTitle>Skontaktuj się ze mną</SectionTitle>
 			<p>
 				Jesteś zainteresowany współpracą lub masz do mnie pytanie, chętnie
 				odpowiem 🙂
