@@ -1,0 +1,11 @@
+.hero {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-image: url('../../public/assets/hero/hero.jpg');
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+}

@@ -1,0 +1,49 @@
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	color: #fff;
+	a {
+		color: #fff;
+		text-decoration: none;
+	}
+	.bar {
+		padding: 0.3em;
+		padding-right: 20%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		background-color: rgba(0, 0, 0, 0.5);
+		a {
+			display: inline-block;
+			margin: 0 0.5em;
+			font-size: 2rem;
+		}
+	}
+	.nav {
+		margin: 0 auto;
+		padding: 2rem;
+		max-width: 1200px;
+		display: flex;
+		justify-content: space-between;
+		.logo {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 1rem;
+			font-size: 2rem;
+			svg {
+				font-size: 4rem;
+			}
+		}
+		ul {
+			display: flex;
+			list-style: none;
+			li {
+				margin: 0 1em;
+				font-size: 2rem;
+			}
+		}
+	}
+}
