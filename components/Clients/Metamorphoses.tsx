@@ -1,3 +1,4 @@
+import Button from '../UI/Button';
 import classes from './Metamorphoses.module.scss';
 import Slider from './Slider';
 
@@ -7,6 +8,7 @@ const Metamorphoses = () => {
 			<span>Jak to wygląda?</span>
 			<p>Oni już wiedzą...</p>
 			<Slider />
+			<Button>Zacznijmy działać !</Button>
 		</div>
 	);
 };

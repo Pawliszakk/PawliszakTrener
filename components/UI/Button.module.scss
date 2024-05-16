@@ -15,6 +15,11 @@
 	&:hover {
 		background-color: transparent;
 	}
+	&.darkHoverFont {
+		&:hover {
+			color: var(--cta);
+		}
+	}
 	&.transparent {
 		background-color: transparent;
 		&:hover {

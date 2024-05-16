@@ -29,8 +29,6 @@ const Navbar = () => {
 	}, []);
 	const toggleNavbarHandler = () => setOpen((prev) => !prev);
 
-	console.log(isScrolled);
-
 	return (
 		<header className={classes.header}>
 			<SocialBar isScrolled={isScrolled} />

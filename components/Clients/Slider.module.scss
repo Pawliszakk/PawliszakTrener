@@ -5,12 +5,14 @@
 		justify-content: center;
 		align-items: center;
 		position: relative;
-		height: 500px;
-		width: 600px;
+		height: 280px;
+		width: 280px;
 		.image {
 			position: absolute;
 			object-fit: cover;
 			z-index: 0;
+			width: 100%;
+			height: 100%;
 		}
 	}
 	.arrow {
@@ -43,7 +45,7 @@
 		justify-content: flex-start;
 		align-items: center;
 		padding-left: 1em;
-		padding: 40px;
+		padding: 30px;
 		background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 	}
 	.dots {
@@ -64,13 +66,28 @@
 			}
 		}
 	}
-}
-
-@keyframes showUp {
-	from {
-		opacity: 0;
+	@media (min-width: 400px) {
+		.slider {
+			height: 350px;
+			width: 350px;
+		}
 	}
-	to {
-		opacity: 1;
+	@media (min-width: 576px) {
+		.slider {
+			height: 500px;
+			width: 500px;
+		}
+	}
+	@media (min-width: 768px) {
+		.slider {
+			height: 600px;
+			width: 600px;
+		}
+	}
+	@media (min-width: 992px) {
+		.slider {
+			height: 500px;
+			width: 500px;
+		}
 	}
 }
