@@ -8,7 +8,9 @@ const Metamorphoses = () => {
 			<span>Jak to wygląda?</span>
 			<p>Oni już wiedzą...</p>
 			<Slider />
-			<Button>Zacznijmy działać !</Button>
+			<Button darkHoverFont href="#kontakt">
+				Zacznijmy działać !
+			</Button>
 		</div>
 	);
 };

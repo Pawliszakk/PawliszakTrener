@@ -1,5 +1,4 @@
 'use client';
-import Image from 'next/image';
 import classes from './ReviewsSlider.module.scss';
 import { TbStarFilled } from 'react-icons/tb';
 import { FcGoogle } from 'react-icons/fc';
@@ -100,7 +99,7 @@ const ReviewsSlider = () => {
 						<div className={classes.userBar}>
 							<div className={classes.user}>
 								<div className={classes.avatar}>
-									<Image
+									<img
 										src={review.image}
 										width={30}
 										height={30}

@@ -3,13 +3,28 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-html {
-	font-size: 62.5%;
-	scroll-behavior: smooth;
-}
 
 :root {
 	--cta: #646cfd;
+	--cta-darker: #2b34d4;
 	--bg: #fff;
 	--bg-darker: #f2f4f7;
+}
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 60px;
+	font-size: 62.5%;
+	&::-webkit-scrollbar {
+		width: 10px;
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: var(--cta);
+		border-radius: 100vw;
+	}
+	&::-webkit-scrollbar-thumb:hover {
+		background-color: var(--cta-darker);
+	}
+	&::-webkit-scrollbar-track {
+		background-color: var(--bg);
+	}
 }

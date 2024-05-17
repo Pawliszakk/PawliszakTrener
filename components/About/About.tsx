@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import classes from './About.module.scss';
 import { SiInstagram } from 'react-icons/si';
 import { FaEnvelope, FaSquareFacebook } from 'react-icons/fa6';
@@ -6,7 +5,7 @@ const About = () => {
 	return (
 		<section className={classes.about} id="o-mnie">
 			<div className={classes.photo}>
-				<Image
+				<img
 					src="/assets/trener/alfa.png"
 					width={400}
 					height={400}

@@ -3,7 +3,7 @@ import classes from './Hero.module.scss';
 
 const Hero = () => {
 	return (
-		<header className={classes.hero}>
+		<header className={classes.hero} id='home'>
 			<div className={classes.content}>
 				<h1>Pawliszak Trener</h1>
 
@@ -12,8 +12,10 @@ const Hero = () => {
 				</div>
 
 				<div className={classes.buttons}>
-					<Button>Oferta</Button>
-					<Button transparent>Kontakt</Button>
+					<Button href="#oferta">Oferta</Button>
+					<Button href="#kontakt" transparent>
+						Kontakt
+					</Button>
 				</div>
 			</div>
 		</header>

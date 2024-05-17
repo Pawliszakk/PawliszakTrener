@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import classes from './Offer.module.scss';
 import Button from '../UI/Button';
 import SectionTitle from '../UI/SectionTitle';
@@ -11,14 +10,14 @@ const Offer = () => {
 			<div className={classes.offers}>
 				<div className={classes.tile}>
 					<div className={classes.image}>
-						<Image
+						<img
 							src="/assets/oferta/konsultacja.JPG"
 							width={480}
 							height={480}
 							alt="Zdjęcie prezentujące oferte"
 						/>
 					</div>
-					<div className={classes.description}>
+					<div className={classes.description} id="plany">
 						<h3> Indywidualny Plan Treningowy</h3>
 						<p>
 							Na podstawie twoich potrzeb oraz możliwości otrzymujesz
@@ -27,12 +26,14 @@ const Offer = () => {
 							techniką ćwiczeń - wszystko co jest potrzebne aby zacząć go
 							realizować z dnia na dzień.
 						</p>
-						<Button darkHoverFont>Biorę!</Button>
+						<Button href="#kontakt" darkHoverFont>
+							Biorę!
+						</Button>
 					</div>
 				</div>
 				<div className={classes.tile}>
 					<div className={classes.image}>
-						<Image
+						<img
 							src="/assets/oferta/prowadzenie.JPG"
 							width={480}
 							height={480}
@@ -47,12 +48,14 @@ const Offer = () => {
 							cotygodniową analizę filmów z twoich treningów, aby cały czas
 							doskonalić twoją technikę i monitorować twoje postępy.
 						</p>
-						<Button darkHoverFont>Biorę!</Button>
+						<Button href="#kontakt" darkHoverFont>
+							Biorę!
+						</Button>
 					</div>
 				</div>
 				<div className={classes.tile}>
 					<div className={classes.image}>
-						<Image
+						<img
 							src="/assets/oferta/trening.JPG"
 							width={480}
 							height={480}
@@ -68,12 +71,14 @@ const Offer = () => {
 							nad czym powinniśmy pracować aby jak najbardziej zbliżyć cię do
 							twojego celu.
 						</p>
-						<Button darkHoverFont>Biorę!</Button>
+						<Button href="#kontakt" darkHoverFont>
+							Biorę!
+						</Button>
 					</div>
 				</div>
 				<div className={classes.tile}>
 					<div className={classes.image}>
-						<Image
+						<img
 							src="/assets/oferta/pakiet.JPG"
 							width={480}
 							height={480}
@@ -88,12 +93,14 @@ const Offer = () => {
 							obejmuje indywidualny plan treningowy, prowadzenie online oraz
 							jeden trening personalny w miesiącu.
 						</p>
-						<Button darkHoverFont>Biorę!</Button>
+						<Button href="#kontakt" darkHoverFont>
+							Biorę!
+						</Button>
 					</div>
 				</div>
 				<div className={classes.tile}>
 					<div className={classes.image}>
-						<Image
+						<img
 							src="/assets/oferta/konsultacja.JPG"
 							width={480}
 							height={480}
@@ -109,7 +116,9 @@ const Offer = () => {
 							danym przypadku i wysyłam ci wiadomość zwrotną z rzeczami do
 							poprawy.
 						</p>
-						<Button darkHoverFont>Biorę!</Button>
+						<Button href="#kontakt" darkHoverFont>
+							Biorę!
+						</Button>
 					</div>
 				</div>
 			</div>

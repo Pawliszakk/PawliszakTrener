@@ -5,6 +5,7 @@ interface ButtonProps {
 	classname?: string;
 	transparent?: boolean;
 	darkHoverFont?: boolean;
+	href?: string;
 }
 
 const Button: React.FC<ButtonProps> = (props) => {
@@ -14,7 +15,7 @@ const Button: React.FC<ButtonProps> = (props) => {
 				props.transparent ? classes.transparent : null
 			} ${props.darkHoverFont ? classes.darkHoverFont : null}`}
 		>
-			{props.children}
+			<a href={props.href}>{props.children}</a>
 		</button>
 	);
 };

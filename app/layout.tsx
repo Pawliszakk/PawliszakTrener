@@ -4,6 +4,7 @@ import './globals.css';
 
 import Footer from '@/components/layout/footer/footer';
 import Navbar from '@/components/layout/nav/Navbar';
+import CookiesAlert from '@/components/layout/CookiesAlert/CookiesAlert';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -24,6 +25,7 @@ export default function RootLayout({
 				<Navbar />
 				{children}
 				<Footer />
+				<CookiesAlert />
 			</body>
 		</html>
 	);

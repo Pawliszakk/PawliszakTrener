@@ -1,5 +1,4 @@
 'use client';
-import Image from 'next/image';
 import useEmblaCarousel from 'embla-carousel-react';
 import classes from './CertificatesSlider.module.scss';
 
@@ -25,7 +24,7 @@ const CertificatesSlider = () => {
 			<div className={classes.slider}>
 				{certificates.map((c) => (
 					<div key={c} className={classes.image}>
-						<Image
+						<img
 							src={c}
 							width={200}
 							height={200}

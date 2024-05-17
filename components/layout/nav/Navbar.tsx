@@ -7,6 +7,7 @@ import { CiDumbbell } from 'react-icons/ci';
 import SocialBar from './SocialBar';
 import Hamburger from 'hamburger-react';
 import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 
 const Navbar = () => {
 	const [isOpen, setOpen] = useState(false);
@@ -38,7 +39,7 @@ const Navbar = () => {
 		return () => {
 			window.removeEventListener('scroll', handleScroll);
 		};
-	}, []);
+	}, [pathname]);
 	const toggleNavbarHandler = () => setOpen((prev) => !prev);
 
 	return (
@@ -47,9 +48,9 @@ const Navbar = () => {
 			<nav className={`${classes.nav} ${isScrolled ? classes.scrolled : null}`}>
 				<div className={classes.logo}>
 					{' '}
-					<a href="/#home">
+					<Link href="/#home">
 						<CiDumbbell /> Pawliszak Trener
-					</a>
+					</Link>
 				</div>
 				<div className={classes.hamburger}>
 					<Hamburger toggled={isOpen} toggle={setOpen} />
@@ -57,16 +58,16 @@ const Navbar = () => {
 
 				<ul className={`${classes.list} ${isOpen ? classes.open : null}`}>
 					<li onClick={toggleNavbarHandler}>
-						<a href="#o-mnie">O mnie</a>
+						<a href="/#o-mnie">O mnie</a>
 					</li>
 					<li onClick={toggleNavbarHandler}>
-						<a href="#plany">Plany</a>
+						<a href="/#plany">Plany</a>
 					</li>
 					<li onClick={toggleNavbarHandler}>
-						<a href="#oferta">Oferta</a>
+						<a href="/#oferta">Oferta</a>
 					</li>
 					<li onClick={toggleNavbarHandler}>
-						<a href="#kontakt">Kontakt</a>
+						<a href="/#kontakt">Kontakt</a>
 					</li>
 				</ul>
 			</nav>
