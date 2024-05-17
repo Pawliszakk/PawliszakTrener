@@ -14,19 +14,29 @@ const Footer = () => {
 					</a>
 				</div>
 				<div className={classes.social}>
-					<a href="https://www.facebook.com/oskar.pawliszak.5/">
+					<a
+						href="https://www.facebook.com/oskar.pawliszak.5/"
+						rel="noopener"
+						target="_blank"
+					>
 						<FaSquareFacebook />
 					</a>
 				</div>
 				<div className={classes.social}>
-					<a href="https://www.instagram.com/pawliszakk">
+					<a
+						href="https://www.instagram.com/pawliszakk"
+						rel="noopener"
+						target="_blank"
+					>
 						<SiInstagram />
 					</a>
 				</div>
 			</div>
 			<p>
 				© Pawliszak Trener {currentYear} | Realizacja{' '}
-				<a href="https://www.pawliszakdev.com">PawliszakDev</a>
+				<a href="https://www.pawliszakdev.com" rel="noopener" target="_blank">
+					PawliszakDev
+				</a>
 			</p>
 
 			<Link href="/polityka-prywatnosci">Polityka Prywatności</Link>

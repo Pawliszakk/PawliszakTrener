@@ -27,6 +27,8 @@ const Contact = () => {
 					</a>
 					<a
 						href="https://www.instagram.com/pawliszakk/"
+						rel="noopener"
+						target="_blank"
 						className={classes.info}
 					>
 						<FaInstagram /> Instagram

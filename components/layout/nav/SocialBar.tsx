@@ -16,10 +16,18 @@ const SocialBar: React.FC<SocialBarProps> = (props) => {
 				<a href="mailto:oskar.pawliszak1@o2.pl">
 					<FaEnvelope />
 				</a>
-				<a href="https://www.facebook.com/oskar.pawliszak.5/">
+				<a
+					href="https://www.facebook.com/oskar.pawliszak.5/"
+					rel="noopener"
+					target="_blank"
+				>
 					<FaSquareFacebook />
 				</a>
-				<a href="https://www.instagram.com/pawliszakk">
+				<a
+					href="https://www.instagram.com/pawliszakk"
+					rel="noopener"
+					target="_blank"
+				>
 					<SiInstagram />
 				</a>
 			</div>
