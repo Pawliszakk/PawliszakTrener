@@ -23,6 +23,11 @@
 			a {
 				padding: 0.5em;
 				transition: color 0.3s;
+				span {
+					position: absolute;
+					opacity: 0;
+					pointer-events: none;
+				}
 			}
 			&:hover a {
 				color: #fff;

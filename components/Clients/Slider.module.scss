@@ -32,6 +32,11 @@
 		&.right {
 			right: 0;
 		}
+		span {
+			position: absolute;
+			opacity: 0;
+			pointer-events: none;
+		}
 	}
 
 	.text {

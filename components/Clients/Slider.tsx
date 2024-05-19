@@ -71,13 +71,13 @@ const Slider = () => {
 					onClick={changePreviousSlide}
 					className={`${classes.arrow} ${classes.left}`}
 				>
-					<MdOutlineKeyboardArrowLeft />
+					<MdOutlineKeyboardArrowLeft /> <span>Lewo</span>
 				</button>
 				<button
 					onClick={changeNextSlide}
 					className={`${classes.arrow} ${classes.right}`}
 				>
-					<MdOutlineKeyboardArrowRight />
+					<MdOutlineKeyboardArrowRight /> <span>Prawo</span>
 				</button>
 				<div className={classes.text}>{altTexts[currentImage]}</div>
 			</div>

@@ -11,8 +11,10 @@
 	background-color: var(--cta);
 	cursor: pointer;
 	transition: background-color 0.3s;
+	color: #fff;
 	a {
 		color: #fff;
+
 		text-decoration: none;
 	}
 	&:hover {
@@ -20,6 +22,7 @@
 	}
 	&.darkHoverFont {
 		&:hover {
+			color: var(--cta);
 			a {
 				color: var(--cta);
 			}

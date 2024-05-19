@@ -17,6 +17,11 @@
 			display: inline-block;
 			margin: 0 0.5em;
 			font-size: 2rem;
+			span {
+				position: absolute;
+				opacity: 0;
+				pointer-events: none;
+			}
 		}
 	}
 

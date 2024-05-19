@@ -10,7 +10,7 @@ const Footer = () => {
 			<div className={classes.socials}>
 				<div className={classes.social}>
 					<a href="mailto:oskar.pawliszak1@o2.pl">
-						<FaEnvelope />
+						<FaEnvelope /> <span>oskar.pawliszak1@o2.pl</span>
 					</a>
 				</div>
 				<div className={classes.social}>
@@ -19,7 +19,7 @@ const Footer = () => {
 						rel="noopener"
 						target="_blank"
 					>
-						<FaSquareFacebook />
+						<FaSquareFacebook /> <span>Facebook</span>
 					</a>
 				</div>
 				<div className={classes.social}>
@@ -29,6 +29,7 @@ const Footer = () => {
 						target="_blank"
 					>
 						<SiInstagram />
+						<span>Instagram</span>
 					</a>
 				</div>
 			</div>

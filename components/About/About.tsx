@@ -6,7 +6,7 @@ const About = () => {
 		<section className={classes.about} id="o-mnie">
 			<div className={classes.photo}>
 				<img
-					src="/assets/trener/alfa.png"
+					src="/assets/trener/trener.jpg"
 					width={400}
 					height={400}
 					alt="Zdjęcie trenera Pawliszaka"
@@ -34,6 +34,7 @@ const About = () => {
 					<div className={classes.social}>
 						<a href="mailto:oskar.pawliszak1@o2.pl">
 							<FaEnvelope />
+							<span>oskar.pawliszak1@o2.pl</span>
 						</a>
 					</div>
 					<div className={classes.social}>
@@ -43,6 +44,7 @@ const About = () => {
 							target="_blank"
 						>
 							<FaSquareFacebook />
+							<span>Facebook</span>
 						</a>
 					</div>
 					<div className={classes.social}>
@@ -52,6 +54,7 @@ const About = () => {
 							target="_blank"
 						>
 							<SiInstagram />
+							<span>instagram</span>
 						</a>
 					</div>
 				</div>

@@ -14,21 +14,21 @@ const SocialBar: React.FC<SocialBarProps> = (props) => {
 		>
 			<div className={classes.icons}>
 				<a href="mailto:oskar.pawliszak1@o2.pl">
-					<FaEnvelope />
+					<FaEnvelope /> <span>oskar.pawliszak1@o2.pl</span>
 				</a>
 				<a
 					href="https://www.facebook.com/oskar.pawliszak.5/"
 					rel="noopener"
 					target="_blank"
 				>
-					<FaSquareFacebook />
+					<FaSquareFacebook /> <span>Facebook</span>
 				</a>
 				<a
 					href="https://www.instagram.com/pawliszakk"
 					rel="noopener"
 					target="_blank"
 				>
-					<SiInstagram />
+					<SiInstagram /> <span>instagram</span>
 				</a>
 			</div>
 		</div>
